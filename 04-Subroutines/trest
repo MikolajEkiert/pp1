@@ -1,0 +1,20 @@
+def f(number, even):
+    # Initialize the sum to zero
+    digit_sum = 0
+
+    # Convert the number to a string to iterate through its digits
+    number_str = str(number)
+
+    for digit in number_str:
+        digit_value = int(digit)
+        if (even and digit_value % 2 == 0) or (not even and digit_value % 2 != 0):
+            digit_sum += digit_value
+
+    return digit_sum
+
+# Test cases
+print(f(3124, True))    # 6 (sum of even digits 2 and 4)
+print(f(3124, False))   # 4 (sum of odd digits 3 and 1)
+print(f(20576, False))  # 12 (sum of odd digits 5, 7, and 5)
+print(f(20576, True))   # 8 (sum of even digits 2 and 6)
+print(f(13115, True))
