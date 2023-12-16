@@ -1,0 +1,15 @@
+import stack as s
+if __name__=='__main__':
+    s.display()
+    s.push(2)
+    s.push(14)
+    s.push(9)
+    s.display()
+    s.stack.pop()
+    s.display()
+    s.push(31)
+    s.push(6)
+    s.display()
+    s.pop()
+    s.pop()
+    s.display()
